@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المعلم بيشوي شفيق السبع | تجارة الفراخ البلدي والبط المسكوفي الآر والمولر وأعلاف بلادي</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #d97706;
+            --primary-dark: #b45309;
+            --secondary: #1e293b;
+            --accent-green: #22c55e;
+            --accent-whatsapp: #25d366;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Ticker Bar */
+        .ticker-bar {
+            background: #0f172a;
+            color: #fbbf24;
+            padding: 7px 0;
+            font-size: 0.9rem;
+            overflow: hidden;
+            white-space: nowrap;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .ticker-content {
+            display: inline-block;
+            animation: ticker 25s linear infinite;
+            font-weight: 700;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--secondary);
+            color: #fff;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+
+        .top-bar a {
+            color: #fcd34d;
+            text-decoration: none;
+            font-weight: 800;
+            direction: ltr;
+            display: inline-block;
+        }
+
+        /* Header / Navbar */
+        header {
+            background: var(--card-bg);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.35);
+        }
+
+        .logo-text h1 {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: var(--secondary);
+            line-height: 1.2;
+        }
+
+        .logo-text .phone-sub {
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 1.05rem;
+            direction: ltr;
+            display: inline-block;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .call-btn-head {
+            background: var(--accent-green);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 10px rgba(34, 197, 94, 0.25);
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .call-btn-head:hover {
+            transform: translateY(-2px);
+            background: #16a34a;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.82)), 
+                        url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1350&q=80') center/cover;
+            color: white;
+            text-align: center;
+            padding: 110px 20px;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            background: var(--primary);
+            color: white;
+            padding: 8px 22px;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 800;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #e2e8f0;
+            margin-bottom: 35px;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        .btn-success {
+            background: var(--accent-green);
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #16a34a;
+            transform: translateY(-3px);
+        }
+
+        .btn-whatsapp {
+            background: var(--accent-whatsapp);
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1da851;
+            transform: translateY(-3px);
+        }
+
+        /* Stats Counter */
+        .stats-section {
+            background: var(--card-bg);
+            padding: 35px 20px;
+            margin-top: -40px;
+            position: relative;
+            z-index: 10;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #e2e8f0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            font-weight: 900;
+        }
+
+        .stat-item p {
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            margin: 70px 0 45px;
+        }
+
+        .section-title h3 {
+            font-size: 2.3rem;
+            color: var(--secondary);
+            font-weight: 900;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h3::after {
+            content: '';
+            width: 60%;
+            height: 4px;
+            background: var(--primary);
+            position: absolute;
+            bottom: -10px;
+            left: 20%;
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+            margin-top: 15px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        /* Products Grid */
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 18px 35px rgba(0,0,0,0.14);
+        }
+
+        .product-img {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .product-card:hover .product-img img {
+            transform: scale(1.09);
+        }
+
+        .product-tag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(15, 23, 42, 0.88);
+            color: #fbbf24;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.88rem;
+            font-weight: 800;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .product-body {
+            padding: 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-body h4 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 12px;
+            font-weight: 900;
+        }
+
+        .product-body p {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f1f5f9;
+            padding-top: 16px;
+        }
+
+        .price-text {
+            font-weight: 800;
+            color: var(--primary-dark);
+            font-size: 1.1rem;
+        }
+
+        .order-btn {
+            background: var(--secondary);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 700;
+            transition: background 0.2s;
+        }
+
+        .order-btn:hover {
+            background: var(--primary);
+        }
+
+        /* Feeds Section Highlight */
+        .feeds-banner {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border-radius: 22px;
+            padding: 45px;
+            margin: 60px 0;
+            border: 2px dashed var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            flex-wrap: wrap;
+            box-shadow: 0 10px 25px rgba(217, 119, 6, 0.08);
+        }
+
+        .feeds-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .feeds-text h3 {
+            font-size: 2.1rem;
+            color: var(--primary-dark);
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+
+        .feeds-text p {
+            font-size: 1.15rem;
+            color: #451a03;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .feeds-list {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .feeds-list li {
+            font-weight: 700;
+            color: #78350f;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.05rem;
+        }
+
+        .feeds-list li i {
+            color: var(--primary-dark);
+            font-size: 1.2rem;
+        }
+
+        /* Features Section */
+        .features {
+            background: #fff;
+            padding: 70px 0;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--bg-light);
+            border-radius: 16px;
+            transition: transform 0.3s;
+            border: 1px solid #f1f5f9;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-6px);
+        }
+
+        .feature-icon {
+            width: 75px;
+            height: 75px;
+            background: #fef3c7;
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 20px;
+        }
+
+        .feature-box h4 {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+
+        .feature-box p {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            font-weight: 600;
+        }
+
+        /* Contact Banner */
+        .contact-banner {
+            background: linear-gradient(135deg, var(--secondary), #0f172a);
+            color: white;
+            border-radius: 24px;
+            padding: 55px 30px;
+            text-align: center;
+            margin: 70px 0;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+        }
+
+        .contact-banner h3 {
+            font-size: 2.3rem;
+            margin-bottom: 15px;
+            color: #fbbf24;
+            font-weight: 900;
+        }
+
+        .contact-banner p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .phone-display {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: white;
+            direction: ltr;
+            display: inline-block;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+            background: rgba(255,255,255,0.08);
+            padding: 12px 35px;
+            border-radius: 16px;
+            border: 2px dashed #fbbf24;
+        }
+
+        .banner-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: #94a3b8;
+            padding: 50px 0 25px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            color: white;
+            font-size: 1.7rem;
+            font-weight: 900;
+            margin-bottom: 12px;
+        }
+
+        .copyright {
+            border-top: 1px solid #334155;
+            padding-top: 25px;
+            margin-top: 30px;
+            font-size: 0.95rem;
+        }
+
+        /* Floating Action Buttons */
+        .floating-group {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-decoration: none;
+            color: white;
+            transition: transform 0.2s;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .float-call {
+            background: var(--accent-green);
+            animation: pulse 2s infinite;
+        }
+
+        .float-whatsapp {
+            background: var(--accent-whatsapp);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1.08); box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero h2 {
+                font-size: 2.1rem;
+            }
+            .phone-display {
+                font-size: 1.7rem;
+            }
+            .nav-links {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ticker Bar -->
+    <div class="ticker-bar">
+        <div class="ticker-content">
+            🌾 موزع معتمد لأعلاف بلادي عالية البروتين 🔥 متوفر الآن بط مسكوفي آر وبط مولر تسمين أوزان ثقيلة + كتاكيت بلدي صغار وفرز أول تحصين ممتاز + فراخ بلدي تشعير عالي وفراخ كبار 📞 للطلب المباشر مع المعلم بيشوي شفيق السبع: 01101781220
+        </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div><i class="fa-solid fa-wheat-awn"></i> المعلم بيشوي شفيق السبع - تجارة البط المسكوفي الآر والمولر، الفراخ البلدي، وأعلاف بلادي</div>
+        <div>
+            للتواصل والطلبات: 
+            <a href="tel:01101781220">01101781220</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-feather-pointed"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>المعلم بيشوي شفيق السبع</h1>
+                    <span class="phone-sub"><i class="fa-solid fa-phone"></i> 01101781220</span>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#feeds">أعلاف بلادي</a></li>
+                <li><a href="#features">لماذا نحن؟</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <a href="https://wa.me/201101781220" target="_blank" class="call-btn-head" style="background: var(--accent-whatsapp);">
+                    <i class="fa-brands fa-whatsapp"></i> واتساب
+                </a>
+                <a href="tel:01101781220" class="call-btn-head">
+                    <i class="fa-solid fa-phone-volume"></i> اتصل
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-badge">بط مسكوفي آر ومولر - فراخ بلدي - كتاكيت - أعلاف بلادي</span>
+            <h2>أفخم أنواع الفراخ البلدي والبط المسكوفي الآر والمولر وأعلاف بلادي</h2>
+            <p>نوفر لكم الفراخ البلدي الصافي، البط المسكوفي الآر والبط المولر، الكتاكيت الصغيرة المضمونة، وأعلاف بلادي عالية البروتين بأعلى أوزان وأفضل أسعار بالجملة والقطاعي.</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn btn-primary"><i class="fa-solid fa-store"></i> استعرض المنتجات</a>
+                <a href="tel:01101781220" class="btn btn-success"><i class="fa-solid fa-phone"></i> 01101781220</a>
+                <a href="https://wa.me/201101781220" target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> راسلنا واتساب</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>+10</h3>
+                <p>سنوات خبرة في المجال</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>بط مسكوفي آر ومولر فرز أول</p>
+            </div>
+            <div class="stat-item">
+                <h3>أعلاف بلادي</h3>
+                <p>أعلى معدل تحويل ونمو</p>
+            </div>
+            <div class="stat-item">
+                <h3>يوميًا</h3>
+                <p>توزيع وتوريد جديد</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="container" id="products">
+        <div class="section-title">
+            <h3>منتجاتنا المتاحة</h3>
+            <p>بط مسكوفي آر ومولر، دواجن بلدي حية، كتاكيت صغيرة، وأعلاف بلادي بأعلى مستوى من الجودة والعناية</p>
+        </div>
+
+        <div class="products-grid">
+            
+            <!-- Card 1: كتاكيت صغار (عمر يوم) -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="chicken.jpg.jpg" alt="كتاكيت بلدي صغار عمر يوم">
+                    <span class="product-tag">كتاكيت صغار (عمر يوم)</span>
+                </div>
+                <div class="product-body">
+                    <h4>كتاكيت بلدي صغار ممتاز</h4>
+                    <p>كتاكيت بلدي عمر يوم وأسبوع، فرز أول تحصين كامل ومناعة قوية جداً. جاهزة ومناسبة للتربية المدرسية، المنزلية، والمزارع.</p>
+                    <div class="product-footer">
+                        <span class="price-text">أسعار جملة ممتازة</span>
+                        <a href="tel:01101781220" class="order-btn">طلب الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: البط المسكوفي الآر -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1555852095-64e7428df0fa?auto=format&fit=crop&w=600&q=80" alt="بط مسكوفي آر">
+                    <span class="product-tag">بط مسكوفي آر أصلية</span>
+                </div>
+                <div class="product-body">
+                    <h4>بط مسكوفي آر للتسمين</h4>
+                    <p>بط مسكوفي آر الأصلي، أوزان ثقيلة ومعدل تحويل وسرعة نمو ممتازة جداً ومناعة عالية للتربية والتسمين السريع.</p>
+                    <div class="product-footer">
+                        <span class="price-text">أفضل أسعار للتسمين</span>
+                        <a href="tel:01101781220" class="order-btn">طلب الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: البط المولر -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="molar.jpg" alt="بط مولر">
+                    <span class="product-tag">بط مولر فرز أول</span>
+                </div>
+                <div class="product-body">
+                    <h4>بط مولر أوزان ثقيلة</h4>
+                    <p>بط مولر فرز أول ممتاز، أعلى معدل أوزان ولحم صافي ومقاومة عالية لجميع الظروف الجوية.</p>
+                    <div class="product-footer">
+                        <span class="price-text">متوفر كميات</span>
+                        <a href="tel:01101781220" class="order-btn">طلب الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: فراخ بلدي كبار -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1612170153139-6f881ff067e0?auto=format&fit=crop&w=600&q=80" alt="فراخ بلدي كبار">
+                    <span class="product-tag">فراخ بلدي كبيرة</span>
+                </div>
+                <div class="product-body">
+                    <h4>فراخ بلدي أمهات وكبار</h4>
+                    <p>فراخ بلدي حر أصلية، أوزان ثقيلة وطعم ممتاز ولحم صحي ومغذي، مناسبة للبيوت، العزومات، والمطاعم.</p>
+                    <div class="product-footer">
+                        <span class="price-text">أفضل سعر للكيلو</span>
+                        <a href="tel:01101781220" class="order-btn">طلب الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: فراخ بلدي تشعير عالي -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=600&q=80" alt="فراخ بلدي تشعير عالي">
+                    <span class="product-tag">تشعير عالي ممتازة</span>
+                </div>
+                <div class="product-body">
+                    <h4>فراخ بلدي تشعير عالي</h4>
+                    <p>أوزان ممتازة ونسبة مناعة وتحويل عالية، مرباة على أعلاف بلادي الطبيعية خالية من أي إضافات ضارة.</p>
+                    <div class="product-footer">
+                        <span class="price-text">متوفر كميات</span>
+                        <a href="tel:01101781220" class="order-btn">طلب الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: شكائر أعلاف بلادي -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="Alafblady.jpg" alt="شكائر أعلاف بلادي">
+                    <span class="product-tag">أعلاف بلادي المعتمدة</span>
+                </div>
+                <div class="product-body">
+                    <h4>شكائر أعلاف بلادي</h4>
+                    <p>جميع أنواع أعلاف بلادي (بادئ - نامي - ناهي) بتركيزات بروتين ممتازة لضمان التسمين السريع والصحة العالية.</p>
+                    <div class="product-footer">
+                        <span class="price-text">أسعار خاصة للشكارة</span>
+                        <a href="tel:01101781220" class="order-btn">طلب الآن</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Feeds Special Section (أعلاف بلادي) -->
+    <section class="container" id="feeds">
+        <div class="feeds-banner">
+            <div class="feeds-text">
+                <h3>🌾 موزع معتمد لأعلاف بلادي العالية الجودة</h3>
+                <p>يتوفر لدينا في تجارة المعلم بيشوي شفيق السبع جميع أنواع **أعلاف بلادي** المصنعة من أفضل المكونات والخامات لضمان أعلى معدل نمو وصحة لدواجنك وبطك:</p>
+                <ul class="feeds-list">
+                    <li><i class="fa-solid fa-check-circle"></i> علف بلادي بَادئ 23% بروتين (للكتاكيت والبط الصغير من عمر يوم)</li>
+                    <li><i class="fa-solid fa-check-circle"></i> علف بلادي نَامي 21% بروتين (للطيور والدواجن المتوسطة)</li>
+                    <li><i class="fa-solid fa-check-circle"></i> علف بلادي نَاهي 19% بروتين (لتسمين البط المسكوفي الآر والمولر والفراخ)</li>
+                    <li><i class="fa-solid fa-check-circle"></i> أعلاف بلادي بياض خصيصاً لزيادة إنتاج البيض البلدي</li>
+                </ul>
+                <a href="tel:01101781220" class="btn btn-primary"><i class="fa-solid fa-wheat-awn"></i> استفسر عن أسعار شكائر أعلاف بلادي</a>
+            </div>
+            <div style="flex: 1; text-align: center; min-width: 250px;">
+                <img src="Alafblady.jpg" alt="أعلاف بلادي" style="width: 100%; max-width: 380px; border-radius: 18px; box-shadow: 0 8px 22px rgba(0,0,0,0.15);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h3>لماذا تختار المعلم بيشوي شفيق السبع؟</h3>
+                <p>نحرص دائماً على تقديم الأفضل لعملائنا الكرام</p>
+            </div>
+            <div class="features-grid">
+                
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+                    <h4>جودة وسلالات أصيلة</h4>
+                    <p>جميع البط المسكوفي الآر والمولر والفراخ البلدي والكتاكيت محصنة بأعلى معايير الرعاية والنظافة.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+                    <h4>أعلاف بلادي الأصيلة</h4>
+                    <p>تغذية ممتازة بأعلاف بلادي المعتمدة لضمان التحويل السريع والطعم الممتاز.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                    <h4>جملة وقطاعي</h4>
+                    <p>نلبي جميع احتياجات المحلات، المطاعم، المزارع، وستات البيوت بأفضل الأسعار.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h4>أمانة وسرعة في التوريد</h4>
+                    <p>التزام كامل بالمواعيد والأوزان والأسعار العادلة، هدفنا هو رضا العميل المستمر.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Banner -->
+    <section class="container" id="contact">
+        <div class="contact-banner">
+            <h3>جاهزون لاستقبال طلباتكم واستفساراتكم يومياً!</h3>
+            <p>تواصل مباشرة مع المعلم بيشوي شفيق السبع لمعرفة الأسعار اليومية وحجز الكميات المطلوبة</p>
+            <div>
+                <div class="phone-display"><i class="fa-solid fa-phone"></i> 01101781220</div>
+            </div>
+            <div class="banner-buttons">
+                <a href="tel:01101781220" class="btn btn-success" style="font-size: 1.2rem;">
+                    <i class="fa-solid fa-headset"></i> اتصل بالمعلم بيشوي
